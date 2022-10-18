@@ -1,0 +1,40 @@
+.content {
+    width: 50vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .info{
+        margin-right: 10px;
+        width: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+        color: gray;
+        .date{
+            margin-right: 1rem;
+        }
+        .options {
+            width: 2.8vw;
+            display: flex;
+            justify-content: space-between;
+            .trash {
+                margin-top: 2px;
+                font-size: 1.2vw;
+                color: rgba(255, 81, 0, 0.574);
+                &:hover {
+                    color: rgb(255, 68, 0);
+                    cursor: pointer;
+                }
+            }
+            .check {
+                font-size: 1.5vw;
+                color: rgba(0, 92, 3, 0.552);
+                &:hover {
+                    color: green;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.todos{
+    width: 50vw;
+    display: flex;
+    border: 1px solid;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+        margin-left: 1vw;
+    }
+    .doneBut{
+        width: 6vw;
+        height: 3vh;
+        margin-right: 1vw;
+        .icon{
+            margin-left: 10px;
+            color: green;
+        }   
+    }
+}
