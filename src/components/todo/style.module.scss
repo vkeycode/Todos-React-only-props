@@ -1,16 +1,20 @@
 .content {
+    padding: 10px 0 10px 0;
     width: 50vw;
-    height: 5vh;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid rgb(36, 36, 36);
     justify-content: space-between;
+    .todo{
+        font-size: 1.5rem;
+    }
     .info{
-        margin-right: 10px;
+        margin-right: 20px;
         width: 10vw;
         display: flex;
         align-items: center;
         justify-content:flex-end;
-        color: gray;
+        color: rgb(36, 36, 36);
         .date{
             margin-right: 1rem;
         }

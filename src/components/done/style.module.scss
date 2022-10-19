@@ -3,10 +3,15 @@
     flex-direction: column;
     width: 50vw;
     .done{
-        font-size: 1vw;
+        font-size: 1.5rem;
         height: 5vh;
         text-align: left;
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        border-bottom: 1px solid rgb(45, 45, 45);
+        .icon{
+            color: rgb(22, 79, 22);
+        }
     }
 }

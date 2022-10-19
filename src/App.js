@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { useSpring, animated, to } from 'react-spring';
 import './App.css';
 import Done from './components/done/done';
@@ -12,6 +12,7 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [done, setDone] = useState([])
   const [changeList, setChangeList] = useState(true)
+  const divref = useRef()
 
   const addTodo = (e) => {
     if (e.keyCode === 13) {
@@ -24,6 +25,8 @@ function App() {
         }])
     }
   }
+
+  
 
   const changingList = () => {
     setChangeList(!changeList)
@@ -44,11 +47,17 @@ function App() {
     delay: 1000
   })
 
+  const changeFont = (e) => {
+    divref.current.style.fontFamily = e.target.value
+  }
+
   return (
-    <div className='mainDiv'>
-      <animated.div style={initialAnimation} className="App">
+    <div ref={divref} className='mainDiv'>
+      <animated.div  style={initialAnimation} className="App">
         <Header
           changingList={changingList}
+          changeList={changeList}
+          changeFont = {changeFont}
         />
         <Input
           type="text"

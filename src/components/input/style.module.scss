@@ -5,5 +5,17 @@
         width: 50vw;
         height: 5vh;
         font-size: 1.5vw;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.244);
+        border: none;
+        text-indent: 10px;
+    }
+    .textArea:focus{
+        border: none;
+        outline: none;
+        box-shadow: 1px 1px  5px rgb(0, 0, 0);
+    }
+    .textArea::placeholder{
+        color: black;
     }
 }

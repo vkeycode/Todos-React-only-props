@@ -4,13 +4,20 @@
   flex-direction: column;
   align-items: center;
   height: 70vh;
-  width: 50vw;
+  width: 65vw;
+  border-radius: 20px;
+  box-shadow: inset 1px 1px 10px 3px rgba(0, 0, 0, 0.517);
+  background-color: rgba(0, 0, 0, 0.089);
+  backdrop-filter: blur(20px);
 }
 .mainDiv{
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
+  font-family: 'Lobster', cursive;
+  font-size: 1vw;
+  background-image: url("./../public/vintage.jpg");
 }
 
 
