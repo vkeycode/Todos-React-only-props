@@ -12,7 +12,7 @@ const Todo = ({ id, todo, deleteTodo, setDone }) => {
             </div>
             <div className={Style.info}>
                 <span className={Style.date}>
-                    {todo.date.toLocaleDateString()}
+                    {todo.date}
                 </span>
                 <span className={Style.options}>
                     <FontAwesomeIcon onClick={() => { deleteTodo(id) }} className={Style.trash} icon={faTrash} />

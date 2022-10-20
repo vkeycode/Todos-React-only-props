@@ -3,18 +3,21 @@ import Style from './style.module.scss'
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Done = ({ done }) => {
+const Done = ({ done, clear }) => {
 
   return (
-    <div className={Style.container} >
-      {
-        done.map((todo, index) => {
-          return (
-            <div className={Style.done}>{index+1}.{todo.todo}<FontAwesomeIcon className={Style.icon} icon={faCheck} /></div>
+    <>
+      <div className={Style.container} >
+        {
+          done.map((todo, index) => {
+            return (
+              <div className={Style.done}>{index + 1}.{todo.todo}<FontAwesomeIcon className={Style.icon} icon={faCheck} /></div>
             );
-        })
-      }
-    </div>
+          })
+        }
+      </div>
+      <button onClick={() => clear()}>Clear</button>
+    </>
   )
 }
 

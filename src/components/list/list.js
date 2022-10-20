@@ -9,6 +9,7 @@ const List = ({ todos, deleteTodo, setDone  }) => {
   return (
     <div className={Style.container}>
       {
+        todos &&
         todos.map((item, index) => {
           return <Todo
             id={index}

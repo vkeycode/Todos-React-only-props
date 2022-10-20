@@ -15,7 +15,6 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  font-family: 'Lobster', cursive;
   font-size: 1vw;
   background-image: url("./../public/vintage.jpg");
 }
