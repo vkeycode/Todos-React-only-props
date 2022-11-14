@@ -40,13 +40,11 @@ const doneTodo = (todo, id) => {
 }
 
 const clearDone = () => {
-  localStorage.removeItem("done")
   setDone([])
 }
 
 const deleteTodo = (id) => {
   setTodos(todos.filter((todo, index) => index !== id))
-  localStorage.setItem("todos", JSON.stringify(todos.filter((todo, index) => index !== id)))
 }
 
 const initialAnimation = useSpring({
